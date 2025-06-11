@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #fcb045, #f3ec78);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 600px;
+  margin: 5vh auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fdd835;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.2rem;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #d38312, #a83279);
+}
+
+.task-controls {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+ul#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#task-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul#task-list li.completed {
+  text-decoration: line-through;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #ffffff;
+}
+
+body.dark-mode .container {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode ul#task-list li.completed {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+body.dark-mode .footer {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .footer a {
+  color: #ffd700;
+}
