@@ -1,7 +1,7 @@
 Escape Velocity Tracker
 
 A minimalist, sleek, and responsive task tracker for getting things done at light speed.  
-Built by [James O' Neil Bishop II](https://github.com/yourusername), powered with HTML, CSS, JavaScript — and enhanced with `localStorage` and dark mode.
+Built by https://github.com/JamesOBishop10, powered with HTML, CSS, JavaScript — and enhanced with `localStorage` and dark mode.
 
 
 
